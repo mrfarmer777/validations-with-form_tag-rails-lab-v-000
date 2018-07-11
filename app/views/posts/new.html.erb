@@ -21,12 +21,12 @@
 
   <div class="field <%=' field_with_errors' if @post.errors[:content].any?%>">
     <%= label_tag "content", "Email" %>
-    <%= text_field_tag "content", @post.email %>
+    <%= text_field_tag "content", @post.content %>
   </div>
 
   <div class="field <%=' field_with_errors' if @post.errors[:category].any?%>">
     <%= label_tag "category", "Category" %>
-    <%= text_field_tag "category", @post.phone_number %>
+    <%= text_field_tag "category", @post.category %>
   </div>
 
   <%= submit_tag "Create" %>
