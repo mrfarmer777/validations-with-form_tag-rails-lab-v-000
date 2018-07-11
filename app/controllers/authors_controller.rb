@@ -17,11 +17,12 @@ class AuthorsController < ApplicationController
   end
 
   def edit
+    @author=Author.find(params[:id])
   end
 
   def update
-    if Author.new(author_params).valid?
-      @author=Author.find(params[:id])
+    
+    if @author.valid?
       @author.update(author_params)
     else
       render :edit
