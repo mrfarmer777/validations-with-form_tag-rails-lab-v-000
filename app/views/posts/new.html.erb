@@ -14,9 +14,9 @@
 
 
 <%= form_tag posts_path, method: "post" do %>
-  <div class="field <%=' field_with_errors' if @post.errors[:name].any?%>">
-    <%= label_tag "name", "Name" %>
-    <%= text_field_tag "name", @post.name %>
+  <div class="field <%=' field_with_errors' if @post.errors[:title].any?%>">
+    <%= label_tag "title", "Name" %>
+    <%= text_field_tag "title", @post.title %>
   </div>
 
   <div class="field <%=' field_with_errors' if @post.errors[:email].any?%>">
