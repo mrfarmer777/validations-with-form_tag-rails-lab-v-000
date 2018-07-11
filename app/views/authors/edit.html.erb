@@ -5,7 +5,9 @@
       <li>
         <%= message %>
       </li>
+    <%end%>
   </ul>
+<%end%>
 
 <%=form_tag("/authors/<%=@author.id%>") do %>
   Name: <%=text_field_tag "name", @author.name%> <br />
