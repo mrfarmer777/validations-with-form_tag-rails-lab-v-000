@@ -21,7 +21,6 @@ class AuthorsController < ApplicationController
   end
 
   def update
-    
     if @author.valid?
       @author.update(author_params)
     else
